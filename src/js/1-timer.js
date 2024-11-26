@@ -2,6 +2,7 @@ import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
+import iconReject from "../img/error.svg";
 
 
 
@@ -19,7 +20,6 @@ let timerId;
 iziToast.settings({
     timeout: 5000,
     position: 'topRight',
-    // icon: 'material-icons',
     transitionIn: 'flipInX',
     transitionOut: 'flipOutX',
 });
@@ -34,6 +34,12 @@ const options = {
             iziToast.error({
                 title: 'Error',
                 message: 'Please choose a date in the future',
+                iconUrl: iconReject,
+                titleColor: "#fff",
+                titleSize: "16px",
+                messageColor: "#fff",
+                messageSize: "16px",
+                backgroundColor: "#ef4040",
             });
             startBtn.disabled = true;
         } else {

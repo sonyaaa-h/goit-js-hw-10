@@ -49,11 +49,6 @@ button[data-start] {
 
 button[data-start]:hover,
 button[data-start]:focus {
-    border-radius: 8px;
-    padding: 8px 16px;
-    width: 75px;
-    height: 40px;
-    background: #6c8cff;
     background: #6c8cff;
 }
 
